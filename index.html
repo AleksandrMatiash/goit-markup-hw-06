@@ -21,6 +21,11 @@
 		<div class="head-container container">
 			<nav class="nav">
 				<a class="home-link" href="./index.html">Web<span class="studio-part">Studio</span></a>
+				<button class="btn-menu" type="button">
+					<svg class="svg-menu" width="24" height="24">
+						<use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+					</svg>
+				</button>
 				<ul class="ul-header">
 					<li class="li-header"><a href="./index.html" class="a-header active current">Studio</a></li>
 					<li class="li-header"><a href="" class="a-header">Portfolio</a></li>
@@ -49,51 +54,51 @@
 			<div class="section-two-container container">
 				<h2 class="visually-hidden">peculiarities</h2>
 				<ul class="ul-two-section">
-					<li class="list-item-two">
+					<li class="list-item-two list-item-two-mobile">
 						<div class="svg-pictures-container">
 							<svg class="svg-icon" width="64" height="64">
 								<use href="./images/icons.svg#icon-antenna"></use>
 							</svg>
 						</div>
-						<h3 class="heading-three">Strategy</h3>
+						<h3 class="heading-three heading-three-mobile">Strategy</h3>
 						<p class="text">
 							Our goal is to identify the business problem to walk away with the
 							perfect and creative solution.
 						</p>
 					</li>
-					<li class="list-item-two">
+					<li class="list-item-two list-item-two-mobile">
 						<div class="svg-pictures-container">
 							<svg class="svg-icon" width="64" height="64">
 								<use href="./images/icons.svg#icon-clock"></use>
 							</svg>
 						</div>
-						<h3 class="heading-three">Punctuality</h3>
+						<h3 class="heading-three heading-three-mobile">Punctuality</h3>
 						<p class="text">
 							Bring the key message to the brand's audience for the best price
 							within the shortest possible time.
 						</p>
 
 					</li>
-					<li class="list-item-two">
+					<li class="list-item-two list-item-two-mobile">
 						<div class="svg-pictures-container">
 							<svg class="svg-icon" width="64" height="64">
 								<use href="./images/icons.svg#icon-diagram"></use>
 							</svg>
 						</div>
-						<h3 class="heading-three">Diligence</h3>
+						<h3 class="heading-three heading-three-mobile">Diligence</h3>
 						<p class="text">
 							Research and confirm brands that present the strongest digital
 							growth opportunities and minimize risk.
 						</p>
 
 					</li>
-					<li class="list-item-two">
+					<li class="list-item-two list-item-two-mobile">
 						<div class="svg-pictures-container">
 							<svg class="svg-icon" width="64" height="64">
 								<use href="./images/icons.svg#icon-astronaut"></use>
 							</svg>
 						</div>
-						<h3 class="heading-three">Technologies</h3>
+						<h3 class="heading-three heading-three-mobile">Technologies</h3>
 						<p class="text">
 							Design practice focused on digital experiences. We bring forth a
 							deep passion for problem-solving.
@@ -413,79 +418,79 @@
 	</footer>
 
 
-	<div class="model-overlay is-open">
-		<div class="model">
-			<button class="model-btn" type="button"><svg class="svg-btm" width="8" height="8">
-					<use href="./images/icons.svg#icon-close-black"></use>
-				</svg></button>
-			<p class="model-p">Leave your contacts and we will call you back</p>
+	<!-- <div class="model-overlay is-open">
+	<div class="model">
+		<button class="model-btn" type="button"><svg class="svg-btm" width="8" height="8">
+				<use href="./images/icons.svg#icon-close-black"></use>
+			</svg></button>
+		<p class="model-p">Leave your contacts and we will call you back</p>
 
-			<form class="model-form">
-				<div class="label-div">
-					<label class="model-label" for="user-name">
-						<span class="small-text">Name</span>
-					</label>
-					<div class="input-div">
-						<input class="model-input" type="text" name="user-name" id="user-name" />
-						<svg class="model-svg" width="18" height="24">
-							<use href="./images/icons.svg#icon-person_black"></use>
+		<form class="model-form">
+			<div class="label-div">
+				<label class="model-label" for="user-name">
+					<span class="small-text">Name</span>
+				</label>
+				<div class="input-div">
+					<input class="model-input" type="text" name="user-name" id="user-name" />
+					<svg class="model-svg" width="18" height="24">
+						<use href="./images/icons.svg#icon-person_black"></use>
+					</svg>
+				</div>
+			</div>
+
+			<div class="label-div">
+				<label class="model-label" for="user-tel">
+					<span class="small-text">Phone</span>
+				</label>
+				<div class="input-div">
+					<input class="model-input" type="tel" name="user-tel" id="user-tel" />
+					<svg class="model-svg" width="18" height="24">
+						<use href="./images/icons.svg#icon-phone_black"></use>
+					</svg>
+				</div>
+			</div>
+
+			<div class="label-div">
+				<label class="model-label" for="user-email">
+					<span class="small-text">Email</span>
+				</label>
+				<div class="input-div">
+					<input class="model-input" type="email" name="user-content" id="user-email" />
+					<svg class="model-svg" width="18" height="24">
+						<use href="./images/icons.svg#icon-email_black"></use>
+					</svg>
+				</div>
+				<div class=""></div>
+			</div>
+
+
+			<div class="label-div-four">
+
+				<label class="model-label" for="user-comment">
+					<span class="small-text">Comment</span>
+				</label>
+				<textarea class="model-textarea" id="user-comment" name="user-comment"
+					placeholder="Text input"></textarea>
+			</div>
+
+			<div class="model-div-five">
+				<input class="visually-hidden" id="user-privacy" type="checkbox" value="true" name="user-privacy" />
+				<label class="model-label-five" for="user-privacy">
+					<span class="span-checkbox">
+						<svg class="svg-checkbox" width="10" height="8">
+							<use href="./images/icons.svg#icon-Vector"></use>
 						</svg>
-					</div>
-				</div>
-
-				<div class="label-div">
-					<label class="model-label" for="user-tel">
-						<span class="small-text">Phone</span>
-					</label>
-					<div class="input-div">
-						<input class="model-input" type="tel" name="user-tel" id="user-tel" />
-						<svg class="model-svg" width="18" height="24">
-							<use href="./images/icons.svg#icon-phone_black"></use>
-						</svg>
-					</div>
-				</div>
-
-				<div class="label-div">
-					<label class="model-label" for="user-email">
-						<span class="small-text">Email</span>
-					</label>
-					<div class="input-div">
-						<input class="model-input" type="email" name="user-content" id="user-email" />
-						<svg class="model-svg" width="18" height="24">
-							<use href="./images/icons.svg#icon-email_black"></use>
-						</svg>
-					</div>
-					<div class=""></div>
-				</div>
+					</span>
+					I accept the terms and conditions of the
+					<a href="#" class="privacy-policy">Privacy Policy</a>
+				</label>
+			</div>
+			<button class="btm" type="button">Send</button>
+		</form>
 
 
-				<div class="label-div-four">
-
-					<label class="model-label" for="user-comment">
-						<span class="small-text">Comment</span>
-					</label>
-					<textarea class="model-textarea" id="user-comment" name="user-comment"
-						placeholder="Text input"></textarea>
-				</div>
-
-				<div class="model-div-five">
-					<input class="visually-hidden" id="user-privacy" type="checkbox" value="true" name="user-privacy" />
-					<label class="model-label-five" for="user-privacy">
-						<span class="span-checkbox">
-							<svg class="svg-checkbox" width="10" height="8">
-								<use href="./images/icons.svg#icon-Vector"></use>
-							</svg>
-						</span>
-						I accept the terms and conditions of the
-						<a href="#" class="privacy-policy">Privacy Policy</a>
-					</label>
-				</div>
-				<button class="btm" type="button">Send</button>
-			</form>
-
-
-		</div>
 	</div>
+	</div> -->
 
 </body>
 

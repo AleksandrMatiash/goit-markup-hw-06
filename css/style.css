@@ -44,24 +44,25 @@ img {
 }
 
 .container {
-	width: 1158px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
 }
 
 .head-container {
 	display: flex;
-	align-items: center;
+	flex-direction: column;
 	justify-content: space-between;
 }
 
 .nav {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .nav .home-link {
-	margin-right: 76px;
+	margin-right: 120px;
 }
 
 .ul-header {
@@ -207,11 +208,13 @@ img {
 
 .ul-two-section {
 	display: flex;
+	flex-direction: column;
+
 	gap: 24px;
 }
 
 .list-item-two {
-	width: calc((100% - 72px) / 4)
+	width: 100%;
 }
 
 .list-item-two:last-child {
@@ -239,11 +242,13 @@ img {
 
 .ul-tree-section {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 	gap: 24px;
 }
 
 .ul-tree-section .list-item {
-	width: calc((100% - 72px) / 4);
+	width: 100%;
 	border-radius: 0 0 4px 4px;
 	background-color: #ffffff
 }
@@ -258,9 +263,11 @@ img {
 
 .ul-four-section {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
+	flex-wrap: nowrap;
 	column-gap: 24px;
 	row-gap: 48px;
+	width: 288px;
 }
 
 .ul-four-section .list-item {
@@ -290,7 +297,14 @@ img {
 	color: #2e2f42;
 }
 
+.section-four-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .section-four-container .heading-two {
+
 	margin-bottom: 72px;
 }
 
@@ -311,7 +325,7 @@ img {
 	background-size: cover;
 	background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office_1.jpg);
 	background-position: center;
-	max-width: 1440px;
+	max-width: 100%;
 	margin: 0 auto;
 }
 
@@ -367,6 +381,7 @@ img {
 }
 
 .footer {
+
 	background-color: #2E2F42;
 	padding: 100px 0;
 }
@@ -495,6 +510,8 @@ img {
 
 .form-labbel {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 	gap: 24px;
 }
 
@@ -502,20 +519,25 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 	width: 208px;
 	height: 80px;
-	margin-right: 80px;
+	margin-bottom: 72px;
 }
 
 .footer-container {
 	display: flex;
-	align-items: baseline;
+	flex-direction: column;
+	align-items: center;
 
 }
 
 .footer-logo-text-container {
-	margin-right: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 72px;
 }
 
 .overlay {
@@ -596,8 +618,11 @@ img {
 }
 
 .footer-email {
-	width: 458px;
-	height: 80px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	width: 100%;
 }
 
 .model-overlay {
@@ -845,4 +870,49 @@ img {
 
 .privacy-polic:hover {
 	text-decoration: underline;
+}
+
+/* адвптивная верстка */
+
+@media screen and (max-width:767px) {
+	.ul-header {
+		display: none;
+		visibility: hidden;
+		pointer-events: none;
+	}
+
+	.address {
+		display: none;
+		visibility: hidden;
+		pointer-events: none;
+	}
+
+	.svg-pictures-container {
+		display: none;
+		visibility: hidden;
+		pointer-events: none;
+	}
+
+	.heading-three-mobile {
+		font-family: "Roboto", sans-serif;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 40px;
+		letter-spacing: 0.02em;
+		text-align: center;
+	}
+
+	.list-item-two-mobile {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 72px;
+	}
+}
+
+.btn-menu {
+	border: none;
+	background-color: #ffffff;
+	padding: 16px;
+	display: inline-block;
 }
